@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Uang dan Berat Badan Ideal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Konversi Uang ke Pecahan</h2>
+        <input type="number" id="inputMoney" class="input-field" placeholder="Masukkan jumlah uang (kelipatan 25)">
+        <div class="button" onclick="calculateMoney()">Hitung</div>
+        <p id="resultMoney" class="result"></p>
+    </div>
+
+    <div class="calculator">
+        <h2>Kalkulator Berat Badan Ideal</h2>
+        <div class="input-section">
+            <label for="heightInput">Tinggi Badan (cm):</label>
+            <input type="number" id="heightInput" placeholder="Masukkan tinggi badan">
+            <div class="button" onclick="calculateIdealWeight()">Hitung</div>
+        </div>
+        <div class="result-section">
+            <p id="resultWeight"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
